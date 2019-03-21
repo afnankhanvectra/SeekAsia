@@ -13,6 +13,8 @@
 		9C63F77C2244369E00AB323B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C63F77A2244369E00AB323B /* LaunchScreen.storyboard */; };
 		9C63F784224438D800AB323B /* SALoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C63F783224438D800AB323B /* SALoginViewController.swift */; };
 		9C63F79322443ACC00AB323B /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C63F79222443ACC00AB323B /* API.swift */; };
+		9C63F79922443D6300AB323B /* JobModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C63F79822443D6300AB323B /* JobModel.swift */; };
+		9C63F79D22443E6D00AB323B /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C63F79C22443E6D00AB323B /* Const.swift */; };
 		DD65C32059BC6E86E17FB61D /* Pods_SeekAsia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CA5202EAF954A0A43502C32 /* Pods_SeekAsia.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +29,8 @@
 		9C63F77D2244369E00AB323B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9C63F783224438D800AB323B /* SALoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SALoginViewController.swift; sourceTree = "<group>"; };
 		9C63F79222443ACC00AB323B /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		9C63F79822443D6300AB323B /* JobModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobModel.swift; sourceTree = "<group>"; };
+		9C63F79C22443E6D00AB323B /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
 		B35F7DEC50A92807FC495370 /* Pods-SeekAsia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeekAsia.release.xcconfig"; path = "Pods/Target Support Files/Pods-SeekAsia/Pods-SeekAsia.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -73,7 +77,9 @@
 			isa = PBXGroup;
 			children = (
 				9C63F7712244369C00AB323B /* AppDelegate.swift */,
-				9C63F783224438D800AB323B /* SALoginViewController.swift */,
+				9C63F79C22443E6D00AB323B /* Const.swift */,
+				9C63F79B22443E4F00AB323B /* View Controller */,
+				9C63F79A22443DAF00AB323B /* Models */,
 				9C63F79422443B0900AB323B /* API */,
 				9C63F79522443B1D00AB323B /* Storyboards */,
 				9C63F7782244369E00AB323B /* Assets.xcassets */,
@@ -97,6 +103,22 @@
 				9C63F77A2244369E00AB323B /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		9C63F79A22443DAF00AB323B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9C63F79822443D6300AB323B /* JobModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9C63F79B22443E4F00AB323B /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9C63F783224438D800AB323B /* SALoginViewController.swift */,
+			);
+			path = "View Controller";
 			sourceTree = "<group>";
 		};
 		B7B90778412B73B284B9885B /* Frameworks */ = {
@@ -209,6 +231,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-SeekAsia/Pods-SeekAsia-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Bolts-Swift/BoltsSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -217,6 +240,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BoltsSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -234,6 +258,8 @@
 				9C63F784224438D800AB323B /* SALoginViewController.swift in Sources */,
 				9C63F79322443ACC00AB323B /* API.swift in Sources */,
 				9C63F7722244369C00AB323B /* AppDelegate.swift in Sources */,
+				9C63F79922443D6300AB323B /* JobModel.swift in Sources */,
+				9C63F79D22443E6D00AB323B /* Const.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

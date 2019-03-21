@@ -13,6 +13,7 @@ class SALoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        API.sharedInstance.getAllJobs()
         // Do any additional setup after loading the view.
     }
     
