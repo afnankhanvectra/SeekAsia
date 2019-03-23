@@ -11,6 +11,7 @@ import Alamofire
 import BoltsSwift
 import SwiftyJSON
 
+
 class API: NSObject {
     
     
@@ -20,7 +21,6 @@ class API: NSObject {
         }
         return Singleton.instance
     }
-    
     
     
     func getAllJobs() -> Task<AnyObject> {
@@ -37,11 +37,10 @@ class API: NSObject {
                 
                 var jobsArray  =  [JobModel]()
                 
- 
-                for (_ ,jobJson):(String, JSON) in swiftyJsonVar {
+                 for (_ ,jobJson):(String, JSON) in swiftyJsonVar {
                     let jobObject = JobModel(JSONString: jobJson.rawString()!)
                     jobsArray.append(jobObject!)
-                }
+                 }
                 
                 taskSource.set(result: jobsArray as AnyObject)
                 
@@ -51,7 +50,7 @@ class API: NSObject {
         
         return taskSource.task
         
-     }
+    }
     
     
     func checkForError(inJson jobJson : JSON) -> Error? {
@@ -64,8 +63,10 @@ class API: NSObject {
     }
     
     
+    
 }
 
+ 
 // Error
 func  createError(withDescrption descrption :  String , andErrorCode code :  Int) -> NSError {
     let bundleID = Bundle.main.bundleIdentifier
@@ -73,3 +74,7 @@ func  createError(withDescrption descrption :  String , andErrorCode code :  Int
     userInfo[NSLocalizedDescriptionKey] = descrption
     return  NSError(domain:bundleID!, code:code, userInfo:userInfo)
 }
+
+
+
+

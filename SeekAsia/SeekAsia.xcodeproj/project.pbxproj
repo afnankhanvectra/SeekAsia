@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9C0B577B22462E5100E2B0C1 /* SAJobListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0B577A22462E5100E2B0C1 /* SAJobListViewController.swift */; };
+		9C0B577D22462EB900E2B0C1 /* SAJobHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0B577C22462EB900E2B0C1 /* SAJobHistoryViewController.swift */; };
+		9C0B577F224638B400E2B0C1 /* SAJobDetialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0B577E224638B400E2B0C1 /* SAJobDetialViewController.swift */; };
+		9C0B57832246466A00E2B0C1 /* SAJobListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0B57822246466A00E2B0C1 /* SAJobListCell.swift */; };
+		9C0B578522464C7B00E2B0C1 /* SAjobPresentor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0B578422464C7B00E2B0C1 /* SAjobPresentor.swift */; };
+		9C0B578722464E9000E2B0C1 /* SAJobListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0B578622464E9000E2B0C1 /* SAJobListView.swift */; };
 		9C63F7722244369C00AB323B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C63F7712244369C00AB323B /* AppDelegate.swift */; };
 		9C63F7772244369C00AB323B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C63F7752244369C00AB323B /* Main.storyboard */; };
 		9C63F7792244369E00AB323B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C63F7782244369E00AB323B /* Assets.xcassets */; };
@@ -21,6 +27,12 @@
 /* Begin PBXFileReference section */
 		1D99C6F4841E2D47986827EF /* Pods-SeekAsia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeekAsia.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SeekAsia/Pods-SeekAsia.debug.xcconfig"; sourceTree = "<group>"; };
 		3CA5202EAF954A0A43502C32 /* Pods_SeekAsia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SeekAsia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C0B577A22462E5100E2B0C1 /* SAJobListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAJobListViewController.swift; sourceTree = "<group>"; };
+		9C0B577C22462EB900E2B0C1 /* SAJobHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAJobHistoryViewController.swift; sourceTree = "<group>"; };
+		9C0B577E224638B400E2B0C1 /* SAJobDetialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAJobDetialViewController.swift; sourceTree = "<group>"; };
+		9C0B57822246466A00E2B0C1 /* SAJobListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAJobListCell.swift; sourceTree = "<group>"; };
+		9C0B578422464C7B00E2B0C1 /* SAjobPresentor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAjobPresentor.swift; sourceTree = "<group>"; };
+		9C0B578622464E9000E2B0C1 /* SAJobListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAJobListView.swift; sourceTree = "<group>"; };
 		9C63F76E2244369C00AB323B /* SeekAsia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeekAsia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C63F7712244369C00AB323B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9C63F7762244369C00AB323B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -117,6 +129,12 @@
 			isa = PBXGroup;
 			children = (
 				9C63F783224438D800AB323B /* SALoginViewController.swift */,
+				9C0B577A22462E5100E2B0C1 /* SAJobListViewController.swift */,
+				9C0B57822246466A00E2B0C1 /* SAJobListCell.swift */,
+				9C0B578422464C7B00E2B0C1 /* SAjobPresentor.swift */,
+				9C0B578622464E9000E2B0C1 /* SAJobListView.swift */,
+				9C0B577E224638B400E2B0C1 /* SAJobDetialViewController.swift */,
+				9C0B577C22462EB900E2B0C1 /* SAJobHistoryViewController.swift */,
 			);
 			path = "View Controller";
 			sourceTree = "<group>";
@@ -255,11 +273,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C0B578722464E9000E2B0C1 /* SAJobListView.swift in Sources */,
+				9C0B577B22462E5100E2B0C1 /* SAJobListViewController.swift in Sources */,
+				9C0B577D22462EB900E2B0C1 /* SAJobHistoryViewController.swift in Sources */,
+				9C0B57832246466A00E2B0C1 /* SAJobListCell.swift in Sources */,
 				9C63F784224438D800AB323B /* SALoginViewController.swift in Sources */,
+				9C0B577F224638B400E2B0C1 /* SAJobDetialViewController.swift in Sources */,
 				9C63F79322443ACC00AB323B /* API.swift in Sources */,
 				9C63F7722244369C00AB323B /* AppDelegate.swift in Sources */,
 				9C63F79922443D6300AB323B /* JobModel.swift in Sources */,
 				9C63F79D22443E6D00AB323B /* Const.swift in Sources */,
+				9C0B578522464C7B00E2B0C1 /* SAjobPresentor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
