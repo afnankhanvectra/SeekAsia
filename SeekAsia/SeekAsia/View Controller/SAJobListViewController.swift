@@ -34,7 +34,7 @@ class SAJobListViewController: UIViewController {
         presenter =    jobPresentor(view: self)
         presenter.getAllJobsList()
     }
- 
+    
 }
 
 //MARK: TableView Delegate
@@ -62,6 +62,7 @@ extension SAJobListViewController : UITableViewDelegate , UITableViewDataSource 
 extension  SAJobListViewController : JobListView {
     func didGetJobsListSuccessed(withResult result: [JobModel]) {
         jobResult = result
+ 
     }
     
     func didGetProductFailed(witError error: String) {

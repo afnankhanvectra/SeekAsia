@@ -13,6 +13,9 @@ let jobURL = "http://s3.amazonaws.com/istreet-assets/8TycvCVaK7w-3dv566rG-A/jobs
 
 let INVALID_INDEX   =  -1
 
+let  FJOB_KEY            =                           "jobKey"
+
+
 //  -----------  Jobs --------------------------
 
 let  FID            =                           "id"
