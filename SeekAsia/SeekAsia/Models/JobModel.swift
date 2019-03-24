@@ -9,7 +9,10 @@
 import Foundation
 import ObjectMapper
 
-class JobModel : Mappable {
+class JobModel : Mappable , Decodable {
+    
+ 
+    
     
     var id: Int = -1
     

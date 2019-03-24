@@ -56,6 +56,12 @@ extension SAJobListViewController : UITableViewDelegate , UITableViewDataSource 
         return 60
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let jobDetialViewController = JobDetialViewController() as! SAJobDetialViewController
+        jobDetialViewController.jobModel = jobResult![indexPath.row]
+         self.navigationController?.pushViewController(jobDetialViewController, animated: true)
+    }
+    
 }
 
 
